@@ -13,3 +13,6 @@ export const Test: FC = () => {
     </div>
   )
 }
+
+// eslint-disable-next-line no-console
+console.log(Test)
