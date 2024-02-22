@@ -1,0 +1,37 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "scripts": {
+    "lint:ts": "tsc --noEmit --preserveWatchOutput --pretty",
+    "lint:eslint": "esw ./src --ext .js,.jsx,.ts,.tsx --color",
+    "lint": "run-p 'lint:**'",
+    "fix": "run-s 'lint:eslint -- --fix'",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-watch": "^8.0.0",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
